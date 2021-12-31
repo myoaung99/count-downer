@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+      body {
+        height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(
+            90deg,
+            rgba(6, 6, 6, 0.01) 0%,
+            rgba(6, 6, 6, 0.01) 1%,
+            rgba(131, 131, 131, 0.01) 1%,
+            rgba(131, 131, 131, 0.01) 14%,
+            rgba(250, 250, 250, 0.01) 14%,
+            rgba(250, 250, 250, 0.01) 26%,
+            rgba(30, 30, 30, 0.01) 26%,
+            rgba(30, 30, 30, 0.01) 62%,
+            rgba(117, 117, 117, 0.01) 62%,
+            rgba(117, 117, 117, 0.01) 66%,
+            rgba(248, 248, 248, 0.01) 66%,
+            rgba(248, 248, 248, 0.01) 76%,
+            rgba(39, 39, 39, 0.01) 76%,
+            rgba(39, 39, 39, 0.01) 100%
+          ),
+          linear-gradient(
+            90deg,
+            rgba(57, 57, 57, 0.06) 0%,
+            rgba(57, 57, 57, 0.06) 4%,
+            rgba(227, 227, 227, 0.06) 4%,
+            rgba(227, 227, 227, 0.06) 26%,
+            rgba(67, 67, 67, 0.06) 26%,
+            rgba(67, 67, 67, 0.06) 27%,
+            rgba(126, 126, 126, 0.06) 27%,
+            rgba(126, 126, 126, 0.06) 39%,
+            rgba(103, 103, 103, 0.06) 39%,
+            rgba(103, 103, 103, 0.06) 72%,
+            rgba(16, 16, 16, 0.06) 72%,
+            rgba(16, 16, 16, 0.06) 76%,
+            rgba(21, 21, 21, 0.06) 76%,
+            rgba(21, 21, 21, 0.06) 88%,
+            rgba(69, 69, 69, 0.06) 88%,
+            rgba(69, 69, 69, 0.06) 100%
+          ),
+          linear-gradient(
+            90deg,
+            rgba(156, 156, 156, 0.05) 0%,
+            rgba(156, 156, 156, 0.05) 12%,
+            rgba(54, 54, 54, 0.05) 12%,
+            rgba(54, 54, 54, 0.05) 48%,
+            rgba(169, 169, 169, 0.05) 48%,
+            rgba(169, 169, 169, 0.05) 59%,
+            rgba(104, 104, 104, 0.05) 59%,
+            rgba(104, 104, 104, 0.05) 62%,
+            rgba(165, 165, 165, 0.05) 62%,
+            rgba(165, 165, 165, 0.05) 68%,
+            rgba(124, 124, 124, 0.05) 68%,
+            rgba(124, 124, 124, 0.05) 77%,
+            rgba(189, 189, 189, 0.05) 77%,
+            rgba(189, 189, 189, 0.05) 85%,
+            rgba(173, 173, 173, 0.05) 85%,
+            rgba(173, 173, 173, 0.05) 100%
+          ),
+          linear-gradient(
+            90deg,
+            rgba(182, 182, 182, 0.07) 0%,
+            rgba(182, 182, 182, 0.07) 22%,
+            rgba(122, 122, 122, 0.07) 22%,
+            rgba(122, 122, 122, 0.07) 28%,
+            rgba(62, 62, 62, 0.07) 28%,
+            rgba(62, 62, 62, 0.07) 44%,
+            rgba(89, 89, 89, 0.07) 44%,
+            rgba(89, 89, 89, 0.07) 61%,
+            rgba(110, 110, 110, 0.07) 61%,
+            rgba(110, 110, 110, 0.07) 83%,
+            rgba(185, 185, 185, 0.07) 83%,
+            rgba(185, 185, 185, 0.07) 86%,
+            rgba(192, 192, 192, 0.07) 86%,
+            rgba(192, 192, 192, 0.07) 100%
+          ),
+          linear-gradient(
+            90deg,
+            rgba(8, 8, 8, 0.06) 0%,
+            rgba(8, 8, 8, 0.06) 54%,
+            rgba(48, 48, 48, 0.06) 54%,
+            rgba(48, 48, 48, 0.06) 57%,
+            rgba(245, 245, 245, 0.06) 57%,
+            rgba(245, 245, 245, 0.06) 86%,
+            rgba(12, 12, 12, 0.06) 86%,
+            rgba(12, 12, 12, 0.06) 94%,
+            rgba(225, 225, 225, 0.06) 94%,
+            rgba(225, 225, 225, 0.06) 100%
+          ),
+          linear-gradient(
+            90deg,
+            rgb(53, 169, 225) 0%,
+            rgb(1, 145, 219) 80%,
+            rgb(26, 221, 247) 100%
+          );
+      }
+
+      h1 {
+        color: black;
+
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+          0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18,
+          0 0 75px #49ff18;
+        color: black;
+        background: transparent;
+      }
+
+      #day,
+      #hour,
+      #minute,
+      #second {
+        font-size: 5rem;
+      }
+
+      .happy {
+        font-size: 7rem;
+        color: black;
+
+        animation-iteration-count: infinite;
+      }
+      .clock div {
+        display: inline-block;
+      }
+
+      @media screen and (max-width: 768px) {
+        h1 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          font-size: 3rem;
+        }
+        .clock div {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="countDown"></h1>
+    <h1 id="finish" class="happy animate__animated animate__heartBeat"></h1>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("December 31, 2021 13:11:01").getTime();
+
+      function play() {
+        var audio = new Audio("song-1.mp3");
+        audio.play();
+      }
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.querySelector("h1").innerHTML = `
+
+        <div class = "clock">
+        <div><span id='day'>${days}</span> Days</div>
+        <div><span id='hour'>${hours}</span> Hours </div>
+        <div><span id="minute">${minutes}</span> Minutes </div>
+        <div><span id="second">${seconds}</span> Secounds </div>
+        </div>`;
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.querySelector("#countDown").remove();
+          document.querySelector("#finish").innerHTML = "Happy New Year";
+        }
+      }, 1000);
+
+      play();
+    </script>
+  </body>
+</html>
